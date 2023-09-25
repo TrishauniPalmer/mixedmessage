@@ -1,5 +1,5 @@
 // Arrays of random messages to display
-const greetings = ['Hello', 'Hi', 'How are you doing?', 'How the day going?'];
+const greetings = ['Hello', 'Hi', 'How are you doing?', 'How is the day going?'];
 const comments = ['No', 'Yes, that will be all', 'The show is about to start',
 'They come when it is dark', 'The walls can talk'];
 const punctuations = ['?', '.', ',', '!'];
@@ -19,10 +19,10 @@ const comment = getRandomElement(comments);
 const punctuation = getRandomElement(punctuations);
 const subject = getRandomElement(subjects);
 
-const mixedMeassge = `${greeting}, is a ${comment}. How is ${subject}?`;
-return mixedMeassge;
+const mixedMessage = `${greeting}, ${comment}. How is ${subject}?`;
+return mixedMessage;
 }
 
 // Display mixed message
-const mixedMeassge = generateMixedMessage();
-console.log(mixedMeassge);
+const mixedMessage = generateMixedMessage();
+console.log(mixedMessage);
